@@ -3,7 +3,7 @@
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()
 [![Contributions](https://img.shields.io/badge/contributions-welcome-orange)]()
 
-# Pay Integration SDK
+# Pay Integration Java SDK
 
 This SDK was originally created to simplify payment integration with one fintech gateway. After demonstrating its effectiveness, it was **generalized and released under the MIT License** as an open-source framework for payment gateway integrations across fintech ecosystems.  
 
@@ -80,8 +80,8 @@ dependencies {
 ```java
 // 1) Configure the connection
 ConnectionClient connection = new ConnectionClient(
-    System.getenv("OPAY_BASEURL"),
-    Util.getHeader(System.getenv("OPAY_PUBLIC_KEY"), System.getenv("OPAY_MERCHANT_ID"))
+    System.getenv("PAYMENT_PROVIDER_BASEURL"),
+    Util.getHeader(System.getenv("PAYMENT_PROVIDER_PUBLIC_KEY"), System.getenv("PAYMENT_PROVIDER_MERCHANT_ID"))
 );
 
 // 2) Use a module (Cashout shown)
@@ -161,11 +161,11 @@ params.put("orderNo", transactionCheckStatusInput.get("orderNo"));
 params.put("reference", transactionCheckStatusInput.get("reference"));
 
 String payload = Util.mapToJsonString(params);
-String signature = Util.calculateHMAC(payload, System.getenv("OPAY_PRIVATE_KEY"));
+String signature = Util.calculateHMAC(payload, System.getenv("PAYMENT_PROVIDER_PRIVATE_KEY"));
 
 ConnectionClient connection = new ConnectionClient(
-    System.getenv("OPAY_BASEURL"),
-    Util.getHeader(signature, System.getenv("OPAY_MERCHANT_ID"))
+    System.getenv("PAYMENT_PROVIDER_BASEURL"),
+    Util.getHeader(signature, System.getenv("PAYMENT_PROVIDER_MERCHANT_ID"))
 );
 Cashout cashout = new Cashout(connection);
 
@@ -181,7 +181,7 @@ params.put("orderNo", transactionCheckStatusInput.get("orderNo"));
 params.put("reference", transactionCheckStatusInput.get("reference"));
 
 String payload = Util.mapToJsonString(params);
-String signature = Util.calculateHMAC(payload, System.getenv("OPAY_PRIVATE_KEY"));
+String signature = Util.calculateHMAC(payload, System.getenv("PAYMENT_PROVIDER_PRIVATE_KEY"));
 ```
 
 ---

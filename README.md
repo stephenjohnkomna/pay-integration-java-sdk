@@ -12,7 +12,7 @@ The SDK provides:
 - Support for multiple programming languages (Java).
 - Reduced integration time.
 
-This project is now recognized as a **reference model** for developers and organizations implementing digital payment solutions globally.
+This project can be used as a reference model for developers and organizations implementing digital payment solutions globally.
 > Repository: [https://github.com/stephenjohnkomna/pay-integration-sdk])
 
 ---

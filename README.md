@@ -54,7 +54,7 @@ This project can be used as a reference model for developers and organizations i
 <!-- Replace with your published coordinates once live on Central -->
 <dependency>
   <groupId>io.github.stephenjohnkomna</groupId>
-  <artifactId>opay-javasdk</artifactId>
+  <artifactId>payjavasdk</artifactId>
   <version>0.1.0</version>
 </dependency>
 ```
@@ -63,7 +63,7 @@ This project can be used as a reference model for developers and organizations i
 
 ```gradle
 dependencies {
-  implementation "io.github.stephenjohnkomna:opay-javasdk:0.1.0"
+  implementation "io.github.stephenjohnkomna:payjavasdk:0.1.0"
 }
 ```
 

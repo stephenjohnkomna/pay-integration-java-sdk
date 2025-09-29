@@ -38,7 +38,6 @@ This project is now recognized as a **reference model** for developers and organ
 ## Features
 
 * ✅ **Secure auth** (HMAC signing, timestamp/nonce headers)
-* ✅ **Idempotency + retry** helpers to avoid duplicate charges
 * ✅ **Consistent API** across modules (Cashout, Inquiry, Transfer)
 * ✅ **Typed errors & structured responses**
 * ✅ **Ready-to-run examples & unit tests**

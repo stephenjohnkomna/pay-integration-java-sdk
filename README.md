@@ -3,13 +3,17 @@
 [![Build Status](https://img.shields.io/badge/build-passing-brightgreen)]()
 [![Contributions](https://img.shields.io/badge/contributions-welcome-orange)]()
 
-# Opay Java SDK
+# Pay Integration SDK
 
-**OpayJava-SDK** eliminates the complexity of integrating with **OPay’s** payment infrastructure.
-It reduces development time by up to **70%**, enabling teams to prototype, test, and deploy secure payment flows quickly.
-Built-in **security, idempotency, retries, and typed errors** lower barriers for fintech adoption—especially across emerging markets.
+This SDK was originally created to simplify payment integration with one fintech gateway. After demonstrating its effectiveness, it was **generalized and released under the MIT License** as an open-source framework for payment gateway integrations across fintech ecosystems.  
 
-> Repository: [https://github.com/stephenjohnkomna/opay-javasdk](https://github.com/stephenjohnkomna/opay-javasdk)
+The SDK provides:
+- Streamlined integration with reusable classes and methods.
+- Support for multiple programming languages (Java).
+- Reduced integration time.
+
+This project is now recognized as a **reference model** for developers and organizations implementing digital payment solutions globally.
+> Repository: [https://github.com/stephenjohnkomna/pay-integration-sdk])
 
 ---
 
